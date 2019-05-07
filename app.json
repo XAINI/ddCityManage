@@ -1,11 +1,14 @@
 {
   "pages": [
-    "page/index/index"
+    "page/index/index",
+    "page/workbench/workbench",
+    "page/message/message",
+    "page/mine/mine"
   ],
   "window": {
     "enableWK": "YES",
     "enableDSL": true,
-    "defaultTitle": "钉钉E应用DEMO",
+    "defaultTitle": "南明区城管通",
     "backgroundColor": "#F5F5F9",
     "pullRefresh": false,
     "allowsBounceVertical": true
@@ -15,7 +18,30 @@
     "selectedColor": "#108ee9",
     "backgroundColor": "#F5F5F9",
     "items": [
-      
+      {
+        "pagePath": "page/index/index",
+        "icon": "image/icon_home.png",
+        "activeIcon": "image/icon_home_HL.png",
+        "name": "首页"
+      },
+      {
+        "pagePath": "page/workbench/workbench",
+        "icon": "image/icon_workbench.png",
+        "activeIcon": "image/icon_workbench_HL.png",
+        "name": "工作台"
+      },
+      {
+        "pagePath": "page/message/message",
+        "icon": "image/icon_message.png",
+        "activeIcon": "image/icon_message_HL.png",
+        "name": "消息"
+      },
+      {
+        "pagePath": "page/mine/mine",
+        "icon": "image/icon_mine.png",
+        "activeIcon": "image/icon_mine_HL.png",
+        "name": "我的"
+      }
     ]
   },
   "debug": true

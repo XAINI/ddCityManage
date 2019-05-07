@@ -1,6 +1,25 @@
-<view>
-    <button type="primary" size="" onTap=""> 自动免登并获取用户信息 </button>
-    <view class="row">CorpId:{{corpId}}</view>
-    <view class="row">AuthCode:{{authCode}}</view>
-    <view class="row">userId:{{userId}}</view>
+<view class="page">
+  <view class="page-section">
+    <swiper
+      style="height:150px"
+      class="demo-swiper"
+      indicator-dots="{{true}}"
+      autoplay="{{true}}"
+      vertical="{{false}}"
+      interval="{{3000}}"
+      circular="{{true}}"
+    >
+      <block a:for="{{imgs}}">
+        <swiper-item key="swiper-item-{{index}}">
+          <!-- <view class="swiper-item bc_{{item}}"></view> -->
+          <image class="swiper-item"
+            data-name="scaleToFill"
+            mode="scaleToFill" src="{{item}}" onError="imageError" onLoad="imageLoad" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="blank_view">
+    贵阳市南明区城管通
+  </view>
 </view>

@@ -103,3 +103,13 @@ button {
   border: 0;
   line-height: 1;
 }
+
+.blank_view{
+  height: 150px;
+  background-color: #108ee9;
+  margin-bottom: 32rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: aliceblue;
+}
